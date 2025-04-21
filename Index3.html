@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bharat Voter</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #f8fafc, #e2e8f0);
+            text-align: center;
+            padding: 20px;
+        }
+        header {
+            background: #1e3a8a;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .candidate-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .candidate {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+            width: 250px;
+        }
+        .candidate:hover {
+            transform: scale(1.05);
+        }
+        .candidate img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        button {
+            background: linear-gradient(45deg, #1e40af, #2563eb);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        button:hover {
+            background: linear-gradient(45deg, #2563eb, #1e40af);
+        }
+        .vote-counts {
+            margin-top: 20px;
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>    
+        भारत मतदान
+    </header>
+    
+    <h2>Vote for Your Favorite Candidate</h2>
+    
+    <div class="candidate-list">
+        <div class="candidate">
+            <img src="BJP-Emblem.png" alt="BJP">
+            <button onclick="window.location.href='Index4.html'">Bharatiya Janata Party (BJP)</button>
+        </div>
+        <div class="candidate">
+            <img src="indian-national-congress-seeklogo.png" alt="INC">
+            <button onclick="window.location.href='Index4.html'">Indian National Congress (INC)</button>
+        </div>
+        <div class="candidate">
+            <img src="aap-aam-aadami-party-seeklogo.png" alt="AAP">
+            <button onclick="window.location.href='Index4.html'">Aam Aadmi Party (AAP)</button>
+        </div>
+        <div class="candidate">
+            <img src="Flag Communisyt (1).jpg" alt="CPI">
+            <button onclick="window.location.href='Index4.html'">Communist Party of India (CPI)</button>
+        </div>
+        <div class="candidate">
+            <img src="1024px-Cpm_election_symbol.svg.png" alt="CPI-M">
+            <button onclick="window.location.href='Index4.html'">Communist Party of India (Marxist) (CPI-M)</button>
+        </div>
+        <div class="candidate">
+            <img src="BSP.jpg" alt="BSP">
+            <button onclick="window.location.href='Index4.html'">Bahujan Samaj Party (BSP)</button>
+        </div>
+        <div class="candidate">
+            <img src="NPP (1).jpg" alt="NPP">
+            <button onclick="window.location.href='Index4.html'">National People's Party (NPP)</button>
+        </div>
+    </div>
+    <div class="candidate">
+        <img src="nota-symbol-election.jpg" alt="nota-symbol-election">
+        <button onclick="window.location.href='Index4.html'">None Of The Above (NOTA)</button>
+    </div>
+</body>
+</html>
